@@ -3,7 +3,7 @@ import WeatherDisplay from "./WeatherDisplay";
 import Favorites from "./Favorites";
 import Search from "./SearchComponent";
 
-const API_KEY = "a999b4fa9ef105283bf5f90d98756465";
+const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
 const MainDashboard = () => {
   const [city, setCity] = useState(localStorage.getItem("lastCity") || "");
